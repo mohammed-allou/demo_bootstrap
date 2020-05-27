@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page de test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .col,
+      .col-5,
+      .col-6,
+      .col-md-auto {
+        border: solid saddlebrown;
+        margin: 0.1em;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: rgb(54, 45, 110);
+      }
+      .col-md-auto,
+      .col-8,
+      .col-4,
+      .col-md-8 {
+        background-color: tan;
+        border: solid saddlebrown;
+        font-style: oblique;
+        font-family: Verdana;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="w-100"></div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-6">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-5">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content => c'est un élément de contenu variable
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content <br />
+          c'est un élément de contenu variable
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">
+        <div class="col-8">col-8</div>
+        <div class="col-4">col-4</div>
+      </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+      <h3>
+        Empilez les colonnes sur mobile en créant l'une pleine largeur et
+        l'autre demi-largeur
+      </h3>
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+      <br />
+
+      <h3>
+        Les colonnes commencent à 50% de large sur mobile et augmentent jusqu'à
+        33,3% de large sur ordinateur de bureau
+      </h3>
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+      <br />
+
+      <h3>
+        Les colonnes commencent à 50% de large sur mobile et augmentent jusqu'à
+        33,3% de large sur ordinateur de bureau
+      </h3>
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
+    </div>
+    <div class="container px-lg-5">
+      <div class="row mx-lg-n5">
+        <div class="col py-3 px-lg-5 border bg-light">
+          Rembourrage de colonne personnalisé
+        </div>
+        <div class="col py-3 px-lg-5 border bg-light">
+          Rembourrage de colonne personnalisé
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col py-3 px-lg-5 border bg-primaire">Column</div>
+        <div class="col py-3 px-lg-5 border bg-warning">Column</div>
+        <div class="col py-3 px-lg-5 border bg-dark">Column</div>
+        <div class="col py-3 px-lg-5 border bg-light">Column</div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row row-cols-4">
+        <div class="col py-3 px-lg-5 border bg-info">Column</div>
+        <div class="col py-3 px-lg-5 border bg-success">Column</div>
+        <div class="col-6 py-3 px-lg-5 border bg-secondaire">Column</div>
+        <div class="col py-3 px-lg-5 border bg-danger">Column</div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+      </div>
+      <br />
+      <div class="row align-items-center">
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+      </div>
+      <br />
+      <div class="row align-items-end">
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+        <div class="col">
+          Une des trois colonnes
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start py-3 px-lg-5 border bg-light">
+          Une des trois colonnes
+        </div>
+        <div class="col align-self-center py-3 px-lg-5 border bg-light">
+          <br />
+          Une des trois colonnes
+        </div>
+        <br />
+        <div class="col align-self-end py-3 px-lg-5 border bg-light">
+          Une des trois colonnes
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-9 py-3 px-lg-5 border bg-light">.col-9</div>
+        <div class="col-4 py-3">
+          .col-4<br />
+          Puisque 9 + 4 = 13> 12, ce div à l'échelle de 4 colonnes est enroulé
+          sur une nouvelle ligne comme une unité contiguë.
+        </div>
+        <div class="col-6 py-3 px-lg-5 border bg-light">
+          .col-6<br />
+          Les colonnes suivantes continuent le long de la nouvelle ligne.
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 py-3 px-lg-5 border bg-light">.col-md-4</div>
+        <div class="col-md-4 offset-md-4 py-3 px-lg-5 border bg-light">
+          .col-md-4 .offset-md-4
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-3 offset-md-3 py-3 px-lg-5 border bg-light">
+          .col-md-3 .offset-md-3
+        </div>
+        <div class="col-md-3 offset-md-3 py-3 px-lg-5 border bg-light">
+          .col-md-3 .offset-md-3
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-6 offset-md-3 py-3 px-lg-5 border bg-light">
+          .col-md-6 .offset-md-3
+        </div>
+      </div>
+    </div>
+    <div id="app">
+      <br />
+      <div class="container-fluid">
+        <h2>{{ message }}</h2>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="main1.js"></script>
+  </body>
+</html>
